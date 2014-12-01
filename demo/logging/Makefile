@@ -13,5 +13,5 @@ $(OBJ):%o:%cpp
 .PHONY:clean
 
 clean:
-	rm test *.o
+	rm test test.log *.o
 
