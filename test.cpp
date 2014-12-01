@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
 {
-	cout << "shit!" << endl;
+	cout << "mother fucker!" << endl;
 	return 0;
 }
