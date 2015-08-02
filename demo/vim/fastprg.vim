@@ -31,10 +31,12 @@ function SetTitle()
 endfunction
 
 function SetFuncNote()
+    if &filetype == "cpp" || &filetype == "h" || &filetype == "hpp" || &filetype == "cc"
         call append(line(".") + 0,"/****@function:")
         call append(line(".") + 1,"@input: ")
         call append(line(".") + 2,"@ouput: ")
         call append(line(".") + 3,"@return: ")
         call append(line(".") + 4,"@brief: ")
         call append(line(".") + 5,"*****/")
+    endif
 endfunction
